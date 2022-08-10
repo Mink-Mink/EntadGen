@@ -1,0 +1,82 @@
+{
+    "adjectives": [
+        {
+            "frequency": 10,
+            "label": "size",
+            "value": [
+                {
+                    "frequency": 20,
+                    "value": "enormous"
+                },
+                {
+                    "frequency": 20,
+                    "value": "big"
+                },
+                {
+                    "frequency": 20,
+                    "value": "medium-sized"
+                },
+                {
+                    "frequency": 20,
+                    "value": "small"
+                },
+                {
+                    "frequency": 20,
+                    "value": "miniscule"
+                }
+            ]
+        }
+    ],
+    "nature": [
+        {
+            "frequency": 20,
+            "value": "weapon"
+        },
+        {
+            "frequency": 10,
+            "value": "defense"
+        },
+        {
+            "frequency": 10,
+            "value": "utility"
+        }
+    ],
+    "objects": [
+        {
+            "frequency": 10,
+            "label": "music",
+            "value": [
+                {
+                    "frequency": 15,
+                    "value": "flute"
+                },
+                {
+                    "frequency": 20,
+                    "value": "lute"
+                }
+            ]
+        },
+        {
+            "frequency": 10,
+            "label": "weapons",
+            "value": [
+                {
+                    "frequency": 10,
+                    "value": "sword"
+                },
+                {
+                    "frequency": 10,
+                    "value": "hammer"
+                },
+                {
+                    "frequency": 5,
+                    "value": "trident"
+                },
+                {
+                    "frequency": 15,
+                    "value": "bow"
+                }
+            ]
+        }
+    ]
+}
