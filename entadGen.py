@@ -4,17 +4,38 @@
 
 import json
 import secrets
+from collections import defaultdict
 
 WORD_LIST_FOLDER = "./WordLists/"
 WORD_DICTIONARY_FILENAME = "wordDictionary.json"
 
+
+class SamplingStrategy:
+    def __init__(self, exclusive, samplingNumbers):
+        self.exclusive = exclusive
+        self.samplingNumbers = samplingNumbers
+
+    def getSamplingNumber(self):
+        return sampleFromFrequencyList(self.samplingNumbers).value
+
+    @classmethod
+    def fromObject(cls, dataObject):
+        samplingNumbers = [WordData.fromObject(W) for W in dataObject[SAMPLING_NUMBERS]]
+        return SamplingStrategy(dataObject[EXCLUSIVE_KEY], samplingNumbers)
+
+
+defaultSamplingStrategy = lambda: SamplingStrategy(False, [WordData(1, 1)])
+
 OBJECT_KEY = "objects"
 ADJ_KEY = "adjectives"
 NATURE_KEY = "nature"
+SAMPLING_STRATEGY_KEY = "samplingStategy"
 
 VAL_KEY = "value"
 FREQ_KEY = "frequency"
 LABEL_KEY = "label"
+EXCLUSIVE_KEY = "exclusive"
+SAMPLING_NUMBERS = "samplingNumbers"
 
 
 def sampleFromFrequencyList(frequencyList):
@@ -44,7 +65,7 @@ class WordList:
         self.label = label
 
     def sample(self):
-        return sampleFromFrequencyList(self.value).value
+        return [sampleFromFrequencyList(self.value).value]
 
     @classmethod
     def fromObject(cls, dataObject):
@@ -79,50 +100,58 @@ def preProcessWordDictionary(wordDictionary):
         wordDictionary[groupKey] = [
             WordList.fromObject(W) for W in wordDictionary[groupKey]
         ]
+    samplingStrategyDict = defaultdict(defaultSamplingStrategy)
+    for samplingKey, samplingStrategy in wordDictionary[SAMPLING_STRATEGY_KEY].items():
+        samplingStrategyDict[samplingKey] = SamplingStrategy.fromObject(
+            samplingStrategy
+        )
+    wordDictionary[SAMPLING_STRATEGY_KEY] = samplingStrategyDict
     return wordDictionary
 
 
-def sampleNWordsFromExclusiveGroupList(wordDictionary, groupKey, N=1, exclusive=False):
-    groupFrequencyList = wordDictionary[groupKey]
+def sampleUsingSamplingStrategy(wordDictionary, groupKey):
+    samplingStrategy = wordDictionary[SAMPLING_STRATEGY_KEY][groupKey]
 
-    if exclusive:
+    if samplingStrategy.exclusive:
+        groupFrequencyList = [W for W in wordDictionary[groupKey]]
         labelList = [G.label for G in groupFrequencyList]
         resultWordArray = []
-        while N > 0 and len(labelList) > 0:
+        samplingNumber = samplingStrategy.getSamplingNumber()
+        while samplingNumber > 0 and len(labelList) > 0:
             sampledGroup = sampleFromFrequencyList(groupFrequencyList)
             resultWordArray.append(sampledGroup.sample())
             sampledGroupIndex = labelList.index(sampledGroup.label)
             labelList.pop(sampledGroupIndex)
             groupFrequencyList.pop(sampledGroupIndex)
-            N -= 1
+            samplingNumber -= 1
         return resultWordArray
     else:
-        sampledGroup = sampleFromFrequencyList(groupFrequencyList)
+        sampledGroup = sampleFromFrequencyList(wordDictionary[groupKey])
         if isinstance(sampledGroup, WordData):
-            return sampledGroup.value
+            return [sampledGroup.value]
         else:
             return sampledGroup.sample()
 
 
-def sampleNRandomAdjectives(wordDictionary, N):
-    return sampleNWordsFromExclusiveGroupList(wordDictionary, ADJ_KEY, N, True)
+def sampleNRandomAdjectives(wordDictionary):
+    return sampleUsingSamplingStrategy(wordDictionary, ADJ_KEY)
 
 
-def sampleRandomNoun(wordDictionary):
-    return sampleNWordsFromExclusiveGroupList(wordDictionary, OBJECT_KEY)
+def sampleRandomObject(wordDictionary):
+    return sampleUsingSamplingStrategy(wordDictionary, OBJECT_KEY)
 
 
 def sampleRandomNature(wordDictionary):
-    return sampleNWordsFromExclusiveGroupList(wordDictionary, NATURE_KEY)
+    return sampleUsingSamplingStrategy(wordDictionary, NATURE_KEY)
 
 
 def sampleEntad(wordDictionary):
-    shape = sampleRandomNoun(wordDictionary)
-    primaryAdjectives = sampleNRandomAdjectives(wordDictionary, 2)
+    shape = sampleRandomObject(wordDictionary)
+    primaryAdjectives = sampleNRandomAdjectives(wordDictionary)
     primaryNature = sampleRandomNature(wordDictionary)
     print(f"ENTAD")
-    print(f"[{shape}] that is {primaryAdjectives}")
-    print(f"has [{primaryNature}] nature")
+    print(f"shaped as {shape} that is {primaryAdjectives}")
+    print(f"has {primaryNature} nature")
 
 
 formatWordDictionary()

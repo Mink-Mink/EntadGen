@@ -25,6 +25,54 @@
                     "value": "miniscule"
                 }
             ]
+        },
+        {
+            "frequency": 5,
+            "label": "color",
+            "value": [
+                {
+                    "frequency": 10,
+                    "value": "black"
+                },
+                {
+                    "frequency": 10,
+                    "value": "white"
+                },
+                {
+                    "frequency": 10,
+                    "value": "red"
+                },
+                {
+                    "frequency": 10,
+                    "value": "blue"
+                },
+                {
+                    "frequency": 10,
+                    "value": "green"
+                }
+            ]
+        },
+        {
+            "frequency": 10,
+            "label": "material",
+            "value": [
+                {
+                    "frequency": 10,
+                    "value": "cloth"
+                },
+                {
+                    "frequency": 10,
+                    "value": "metallic"
+                },
+                {
+                    "frequency": 10,
+                    "value": "wooden"
+                },
+                {
+                    "frequency": 10,
+                    "value": "stone"
+                }
+            ]
         }
     ],
     "nature": [
@@ -37,8 +85,12 @@
             "value": "defense"
         },
         {
-            "frequency": 10,
-            "value": "utility"
+            "frequency": 5,
+            "value": "storage"
+        },
+        {
+            "frequency": 5,
+            "value": "travel"
         }
     ],
     "objects": [
@@ -75,8 +127,35 @@
                 {
                     "frequency": 15,
                     "value": "bow"
+                },
+                {
+                    "frequency": 10,
+                    "value": "knife"
                 }
             ]
         }
-    ]
+    ],
+    "samplingStategy": {
+        "adjectives": {
+            "exclusive": true,
+            "samplingNumbers": [
+                {
+                    "frequency": 15,
+                    "value": 0
+                },
+                {
+                    "frequency": 20,
+                    "value": 1
+                },
+                {
+                    "frequency": 15,
+                    "value": 2
+                },
+                {
+                    "frequency": 5,
+                    "value": 3
+                }
+            ]
+        }
+    }
 }
