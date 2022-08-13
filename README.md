@@ -62,4 +62,12 @@ To turn this into a full entad, we apply a little bit of creativity to these des
 
 All random idea generation in this script is based on dictionaries of various words, with frequencies of usage associated with them.
 
-[TODO: describe this in more detail later]
+## TODO
+
+* Describe word dictionaries in actual detail
+* Rename frequencies to odds
+* Add more limitations and adjectives
+* Add discord bot integration?
+* figure out hosting?
+* Add a function to list out the probabilities of all the options
+* Go through the dictionaries and tinker with odds
