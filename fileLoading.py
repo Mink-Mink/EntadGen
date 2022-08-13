@@ -2,23 +2,41 @@ from constants import *
 from samplingMethods import *
 import json
 from collections import defaultdict
+import os
 
 
 def formatWordDictionary():
-    wordDictionary = loadWordDictionaryFile()
-    with open(
-        f"{WORD_LIST_FOLDER}{WORD_DICTIONARY_FILENAME}", "w"
-    ) as wordDictionaryFile:
-        json.dump(wordDictionary, wordDictionaryFile, sort_keys=True, indent=4)
+    dictionaries = os.listdir(WORD_LIST_FOLDER)
+    for dictFileName in dictionaries:
+        wordDictionary = loadWordDictionaryFile(dictFileName)
+        with open(f"{WORD_LIST_FOLDER}{dictFileName}", "w") as wordDictionaryFile:
+            json.dump(wordDictionary, wordDictionaryFile, sort_keys=True, indent=4)
 
 
 def loadWordDictionary():
-    wordDictionary = loadWordDictionaryFile()
+    wordDictionary = loadWordDictionaryFile(MAIN_WORD_DICTIONARY_FILENAME)
+    wordDictionary = recursivelyLoadSubDictionaries(wordDictionary)
     return preProcessWordDictionary(wordDictionary)
 
 
-def loadWordDictionaryFile():
-    with open(f"{WORD_LIST_FOLDER}{WORD_DICTIONARY_FILENAME}") as wordDictionaryFile:
+def recursivelyLoadSubDictionaries(wordDictionary):
+    dictionaryList = []
+    for wordGroup in wordDictionary[DICTIONARY_KEY]:
+        if FILENAME_KEY in wordGroup:
+            loadedFile = loadWordDictionaryFile(wordGroup[FILENAME_KEY])
+            wordGroup = {**wordGroup, **loadedFile[WORD_GROUP_KEY]}
+            if SAMPLING_STRATEGY_KEY in loadedFile:
+                wordDictionary[SAMPLING_STRATEGY_KEY] = {
+                    **wordDictionary[SAMPLING_STRATEGY_KEY],
+                    **loadedFile[SAMPLING_STRATEGY_KEY],
+                }
+        dictionaryList.append(wordGroup)
+    wordDictionary[DICTIONARY_KEY] = dictionaryList
+    return wordDictionary
+
+
+def loadWordDictionaryFile(filename):
+    with open(f"{WORD_LIST_FOLDER}{filename}") as wordDictionaryFile:
         return json.load(wordDictionaryFile)
 
 

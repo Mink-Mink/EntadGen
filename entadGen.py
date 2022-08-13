@@ -6,38 +6,18 @@ from fileLoading import *
 from samplingMethods import *
 
 
-def sampleNRandomAdjectives(wordDictionary):
-    return sampleUsingSamplingStrategy(
-        wordDictionary[ADJ_KEY], wordDictionary[SAMPLING_STRATEGY_KEY]
-    )
-
-
-def sampleRandomObject(wordDictionary):
-    return sampleUsingSamplingStrategy(
-        wordDictionary[OBJECT_KEY], wordDictionary[SAMPLING_STRATEGY_KEY]
-    )
-
-
-def sampleRandomNature(wordDictionary):
-    return sampleUsingSamplingStrategy(
-        wordDictionary[NATURE_KEY], wordDictionary[SAMPLING_STRATEGY_KEY]
-    )
-
-
-def sampleRandomMagic(wordDictionary):
-    return sampleUsingSamplingStrategy(
-        wordDictionary[MAGIC_KEY], wordDictionary[SAMPLING_STRATEGY_KEY]
-    )
-
-
 def sampleEntad(wordDictionary):
+    def sampleRandomType(key):
+        return sampleRecursively(wordDictionary[key], wordDictionary)
+
     print(f"ENTAD")
     print(
-        f"shaped as {sampleRandomObject(wordDictionary)} that is {sampleNRandomAdjectives(wordDictionary)}"
+        f"shaped as {sampleRandomType(OBJECT_KEY)} that is {sampleRandomType(ADJ_KEY)}"
     )
     print(
-        f"has {sampleRandomNature(wordDictionary)} nature with magic of {sampleRandomMagic(wordDictionary)}"
+        f"has {sampleRandomType(NATURE_KEY)} nature with magic of {sampleRandomType(MAGIC_KEY)}"
     )
+    print(f"limited due to {sampleRandomType(LIMITATION_KEY)} with vibe of ")
 
 
 formatWordDictionary()

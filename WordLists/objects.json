@@ -1,0 +1,48 @@
+{
+    "samplingStategy": {},
+    "wordGroup": {
+        "label": "objects",
+        "value": [
+            {
+                "frequency": "sumUpChildren",
+                "label": "music",
+                "value": [
+                    {
+                        "frequency": 15,
+                        "value": "flute"
+                    },
+                    {
+                        "frequency": 20,
+                        "value": "lute"
+                    }
+                ]
+            },
+            {
+                "frequency": "sumUpChildren",
+                "label": "weapons",
+                "value": [
+                    {
+                        "frequency": 10,
+                        "value": "sword"
+                    },
+                    {
+                        "frequency": 10,
+                        "value": "hammer"
+                    },
+                    {
+                        "frequency": 5,
+                        "value": "trident"
+                    },
+                    {
+                        "frequency": 15,
+                        "value": "bow"
+                    },
+                    {
+                        "frequency": 10,
+                        "value": "knife"
+                    }
+                ]
+            }
+        ]
+    }
+}

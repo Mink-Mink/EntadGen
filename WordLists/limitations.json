@@ -1,0 +1,80 @@
+{
+    "samplingStategy": {
+        "limitations": {
+            "exclusive": false,
+            "samplingNumbers": [
+                {
+                    "frequency": 60,
+                    "value": 0
+                },
+                {
+                    "frequency": 10,
+                    "value": 1
+                },
+                {
+                    "frequency": 5,
+                    "value": 2
+                }
+            ]
+        }
+    },
+    "wordGroup": {
+        "label": "limitations",
+        "value": [
+            {
+                "frequency": 10,
+                "label": "target object type",
+                "prefix": "target object type: ",
+                "value": [
+                    {
+                        "frequency": 10,
+                        "value": "clothing"
+                    },
+                    {
+                        "frequency": 10,
+                        "value": "armour"
+                    },
+                    {
+                        "frequency": 10,
+                        "value": "weaponry"
+                    },
+                    {
+                        "frequency": 10,
+                        "value": "furniture"
+                    },
+                    {
+                        "frequency": 10,
+                        "value": "animals"
+                    },
+                    {
+                        "frequency": 10,
+                        "value": "people"
+                    }
+                ]
+            },
+            {
+                "frequency": 30,
+                "label": "effect distance",
+                "prefix": "effect distance: ",
+                "value": [
+                    {
+                        "frequency": 10,
+                        "value": "touch"
+                    },
+                    {
+                        "frequency": 10,
+                        "value": "close"
+                    },
+                    {
+                        "frequency": 10,
+                        "value": "only ranged"
+                    },
+                    {
+                        "frequency": 10,
+                        "value": "room-scope"
+                    }
+                ]
+            }
+        ]
+    }
+}
