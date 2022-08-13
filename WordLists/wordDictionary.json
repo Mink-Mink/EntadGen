@@ -1,495 +1,513 @@
 {
-    "adjectives": [
+    "dictionary": [
         {
-            "frequency": 10,
-            "label": "size",
-            "value": [
-                {
-                    "frequency": 20,
-                    "value": "enormous"
-                },
-                {
-                    "frequency": 20,
-                    "value": "big"
-                },
-                {
-                    "frequency": 20,
-                    "value": "medium-sized"
-                },
-                {
-                    "frequency": 20,
-                    "value": "small"
-                },
-                {
-                    "frequency": 20,
-                    "value": "miniscule"
-                }
-            ]
-        },
-        {
-            "frequency": 5,
-            "label": "color",
+            "label": "adjectives",
             "value": [
                 {
                     "frequency": 10,
-                    "value": "black"
-                },
-                {
-                    "frequency": 10,
-                    "value": "white"
-                },
-                {
-                    "frequency": 10,
-                    "value": "red"
-                },
-                {
-                    "frequency": 10,
-                    "value": "blue"
-                },
-                {
-                    "frequency": 10,
-                    "value": "green"
-                }
-            ]
-        },
-        {
-            "frequency": 10,
-            "label": "material",
-            "value": [
-                {
-                    "frequency": 10,
-                    "value": "cloth"
-                },
-                {
-                    "frequency": 10,
-                    "value": "metallic"
-                },
-                {
-                    "frequency": 10,
-                    "value": "wooden"
-                },
-                {
-                    "frequency": 10,
-                    "value": "stone"
-                }
-            ]
-        }
-    ],
-    "limitations": [
-        {
-            "frequency": 10,
-            "label": "target object type",
-            "value": [
-                {
-                    "frequency": 10,
-                    "value": "clothing"
-                },
-                {
-                    "frequency": 10,
-                    "value": "armour"
-                },
-                {
-                    "frequency": 10,
-                    "value": "weaponry"
-                },
-                {
-                    "frequency": 10,
-                    "value": "furniture"
-                },
-                {
-                    "frequency": 10,
-                    "value": "animals"
-                },
-                {
-                    "frequency": 10,
-                    "value": "people"
-                }
-            ]
-        },
-        {
-            "frequency": 10,
-            "label": "target object type",
-            "value": [
-                {
-                    "frequency": 10,
-                    "value": "clothing"
-                },
-                {
-                    "frequency": 10,
-                    "value": "armour"
-                },
-                {
-                    "frequency": 10,
-                    "value": "weaponry"
-                },
-                {
-                    "frequency": 10,
-                    "value": "furniture"
-                },
-                {
-                    "frequency": 10,
-                    "value": "animals"
-                },
-                {
-                    "frequency": 10,
-                    "value": "people"
-                }
-            ]
-        }
-    ],
-    "magic": [
-        {
-            "frequency": 10,
-            "postfix": "kinesis",
-            "value": [
-                {
-                    "frequency": 10,
-                    "value": "Tele"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Hydro"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Pyro"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Earth-"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Aero"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Electricity-"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Plant-"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Bio"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Cryo"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Acid-"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Vapor-"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Slime-"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Metal-"
-                }
-            ]
-        },
-        {
-            "frequency": 10,
-            "label": "ability effects",
-            "prefix": "Increased/decreased ",
-            "value": [
-                {
-                    "frequency": 10,
-                    "value": "speed"
-                },
-                {
-                    "frequency": 10,
-                    "value": "strength"
-                },
-                {
-                    "frequency": 10,
-                    "value": "dexterity"
-                },
-                {
-                    "frequency": 10,
-                    "value": "skill"
-                },
-                {
-                    "frequency": 10,
-                    "value": "constitution"
-                }
-            ]
-        },
-        {
-            "frequency": 10,
-            "label": "energy",
-            "value": [
-                {
-                    "frequency": 10,
-                    "value": "Lasers"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Force"
-                }
-            ]
-        },
-        {
-            "frequency": 10,
-            "label": "illusions",
-            "value": [
-                {
-                    "frequency": 10,
-                    "value": "Invisibility"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Light & shadow manipulation"
-                },
-                {
-                    "frequency": 10,
-                    "value": "False images"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Sound manipulation"
-                }
-            ]
-        },
-        {
-            "frequency": 10,
-            "label": "extrasensory",
-            "value": [
-                {
-                    "frequency": 10,
-                    "value": "Enhanced perception"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Clairvoyance/audience"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Precognition"
-                }
-            ]
-        },
-        {
-            "frequency": 10,
-            "label": "mentalism",
-            "value": [
-                {
-                    "frequency": 10,
-                    "value": "Telepathy"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Emotion manipulation"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Relationships"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Memory manipulation"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Mind control"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Animal control"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Knowledge"
-                }
-            ]
-        },
-        {
-            "frequency": 10,
-            "label": "biological modification",
-            "value": [
-                {
-                    "frequency": 10,
-                    "value": "Regeneration"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Healing"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Shapeshifting"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Physiological adaptation"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Venomous physiology"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Biology manipulation"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Transformation"
-                }
-            ]
-        },
-        {
-            "frequency": 10,
-            "label": "space",
-            "value": [
-                {
-                    "frequency": 10,
-                    "value": "Teleportation"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Portals"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Subspace generation"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Space manipulation"
-                }
-            ]
-        },
-        {
-            "frequency": 10,
-            "label": "matter",
-            "value": [
-                {
-                    "frequency": 10,
-                    "value": "Cloning"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Summoning"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Disintegration"
-                },
-                {
-                    "frequency": 10,
-                    "label": "Generation"
-                },
-                {
-                    "frequency": 10,
-                    "value": "Storage"
-                }
-            ]
-        },
-        {
-            "frequency": 10,
-            "value": "Flight"
-        },
-        {
-            "frequency": 10,
-            "value": "Probability manipulation"
-        },
-        {
-            "frequency": 10,
-            "value": "Gravity manipulation"
-        },
-        {
-            "frequency": 10,
-            "value": "Intangibility"
-        },
-        {
-            "frequency": 10,
-            "value": "Flow manipulation"
-        },
-        {
-            "frequency": 10,
-            "value": "Time manipulation"
-        },
-        {
-            "frequency": 10,
-            "value": "Weather manipulation"
-        },
-        {
-            "frequency": 10,
-            "value": "Size alteration"
-        },
-        {
-            "frequency": 10,
-            "value": "Invulnerability"
-        }
-    ],
-    "nature": [
-        {
-            "frequency": 20,
-            "value": "offensive"
-        },
-        {
-            "frequency": 10,
-            "value": "defensive"
-        },
-        {
-            "frequency": 5,
-            "value": "storage"
-        },
-        {
-            "frequency": 5,
-            "value": "travel"
-        },
-        {
-            "frequency": 2,
-            "value": "metamagic"
-        }
-    ],
-    "objects": [
-        {
-            "frequency": 10,
-            "label": "music",
-            "value": [
-                {
-                    "frequency": 15,
-                    "value": "flute"
-                },
-                {
-                    "frequency": 20,
-                    "value": "lute"
-                }
-            ]
-        },
-        {
-            "frequency": 10,
-            "label": "weapons",
-            "value": [
-                {
-                    "frequency": 10,
-                    "value": "sword"
-                },
-                {
-                    "frequency": 10,
-                    "value": "hammer"
+                    "label": "size",
+                    "value": [
+                        {
+                            "frequency": 20,
+                            "value": "enormous"
+                        },
+                        {
+                            "frequency": 20,
+                            "value": "big"
+                        },
+                        {
+                            "frequency": 20,
+                            "value": "medium-sized"
+                        },
+                        {
+                            "frequency": 20,
+                            "value": "small"
+                        },
+                        {
+                            "frequency": 20,
+                            "value": "miniscule"
+                        }
+                    ]
                 },
                 {
                     "frequency": 5,
-                    "value": "trident"
-                },
-                {
-                    "frequency": 15,
-                    "value": "bow"
+                    "label": "color",
+                    "value": [
+                        {
+                            "frequency": 10,
+                            "value": "black"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "white"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "red"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "blue"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "green"
+                        }
+                    ]
                 },
                 {
                     "frequency": 10,
-                    "value": "knife"
+                    "label": "material",
+                    "value": [
+                        {
+                            "frequency": 10,
+                            "value": "cloth"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "metallic"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "wooden"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "stone"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "limitations",
+            "value": [
+                {
+                    "frequency": 10,
+                    "label": "target object type",
+                    "value": [
+                        {
+                            "frequency": 10,
+                            "value": "clothing"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "armour"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "weaponry"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "furniture"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "animals"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "people"
+                        }
+                    ]
+                },
+                {
+                    "frequency": 10,
+                    "label": "target object type",
+                    "value": [
+                        {
+                            "frequency": 10,
+                            "value": "clothing"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "armour"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "weaponry"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "furniture"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "animals"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "people"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "magic",
+            "value": [
+                {
+                    "frequency": 10,
+                    "label": "kinesis",
+                    "postfix": "kinesis",
+                    "value": [
+                        {
+                            "frequency": 10,
+                            "value": "Tele"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Hydro"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Pyro"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Earth-"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Aero"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Electricity-"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Plant-"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Bio"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Cryo"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Acid-"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Vapor-"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Slime-"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Metal-"
+                        }
+                    ]
+                },
+                {
+                    "frequency": 10,
+                    "label": "ability effects",
+                    "prefix": "Increased/decreased ",
+                    "value": [
+                        {
+                            "frequency": 10,
+                            "value": "speed"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "strength"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "dexterity"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "skill"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "constitution"
+                        }
+                    ]
+                },
+                {
+                    "frequency": 10,
+                    "label": "energy",
+                    "value": [
+                        {
+                            "frequency": 10,
+                            "value": "Lasers"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Force"
+                        }
+                    ]
+                },
+                {
+                    "frequency": 10,
+                    "label": "illusions",
+                    "value": [
+                        {
+                            "frequency": 10,
+                            "value": "Invisibility"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Light & shadow manipulation"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "False images"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Sound manipulation"
+                        }
+                    ]
+                },
+                {
+                    "frequency": 10,
+                    "label": "extrasensory",
+                    "value": [
+                        {
+                            "frequency": 10,
+                            "value": "Enhanced perception"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Clairvoyance/audience"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Precognition"
+                        }
+                    ]
+                },
+                {
+                    "frequency": 10,
+                    "label": "mentalism",
+                    "value": [
+                        {
+                            "frequency": 10,
+                            "value": "Telepathy"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Emotion manipulation"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Relationships"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Memory manipulation"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Mind control"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Animal control"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Knowledge"
+                        }
+                    ]
+                },
+                {
+                    "frequency": 10,
+                    "label": "biological modification",
+                    "value": [
+                        {
+                            "frequency": 10,
+                            "value": "Regeneration"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Healing"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Shapeshifting"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Physiological adaptation"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Venomous physiology"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Biology manipulation"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Transformation"
+                        }
+                    ]
+                },
+                {
+                    "frequency": 10,
+                    "label": "space",
+                    "value": [
+                        {
+                            "frequency": 10,
+                            "value": "Teleportation"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Portals"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Subspace generation"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Space manipulation"
+                        }
+                    ]
+                },
+                {
+                    "frequency": 10,
+                    "label": "matter",
+                    "value": [
+                        {
+                            "frequency": 10,
+                            "value": "Cloning"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Summoning"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Disintegration"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Generation"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "Storage"
+                        }
+                    ]
+                },
+                {
+                    "frequency": 10,
+                    "value": "Flight"
+                },
+                {
+                    "frequency": 10,
+                    "value": "Probability manipulation"
+                },
+                {
+                    "frequency": 10,
+                    "value": "Gravity manipulation"
+                },
+                {
+                    "frequency": 10,
+                    "value": "Intangibility"
+                },
+                {
+                    "frequency": 10,
+                    "value": "Flow manipulation"
+                },
+                {
+                    "frequency": 10,
+                    "value": "Time manipulation"
+                },
+                {
+                    "frequency": 10,
+                    "value": "Weather manipulation"
+                },
+                {
+                    "frequency": 10,
+                    "value": "Size alteration"
+                },
+                {
+                    "frequency": 10,
+                    "value": "Invulnerability"
+                }
+            ]
+        },
+        {
+            "label": "nature",
+            "value": [
+                {
+                    "frequency": 20,
+                    "value": "offensive"
+                },
+                {
+                    "frequency": 10,
+                    "value": "defensive"
+                },
+                {
+                    "frequency": 5,
+                    "value": "storage"
+                },
+                {
+                    "frequency": 5,
+                    "value": "travel"
+                },
+                {
+                    "frequency": 2,
+                    "value": "metamagic"
+                }
+            ]
+        },
+        {
+            "label": "objects",
+            "value": [
+                {
+                    "frequency": 10,
+                    "label": "music",
+                    "value": [
+                        {
+                            "frequency": 15,
+                            "value": "flute"
+                        },
+                        {
+                            "frequency": 20,
+                            "value": "lute"
+                        }
+                    ]
+                },
+                {
+                    "frequency": 10,
+                    "label": "weapons",
+                    "value": [
+                        {
+                            "frequency": 10,
+                            "value": "sword"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "hammer"
+                        },
+                        {
+                            "frequency": 5,
+                            "value": "trident"
+                        },
+                        {
+                            "frequency": 15,
+                            "value": "bow"
+                        },
+                        {
+                            "frequency": 10,
+                            "value": "knife"
+                        }
+                    ]
                 }
             ]
         }

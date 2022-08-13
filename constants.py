@@ -1,6 +1,7 @@
 WORD_LIST_FOLDER = "./WordLists/"
 WORD_DICTIONARY_FILENAME = "wordDictionary.json"
 
+DICTIONARY_KEY = "dictionary"
 
 OBJECT_KEY = "objects"
 ADJ_KEY = "adjectives"
