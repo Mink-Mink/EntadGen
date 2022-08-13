@@ -10,13 +10,6 @@ class SamplingStrategy:
     def getSamplingNumber(self):
         return sampleFromFrequencyList(self.samplingNumbers).value
 
-    @classmethod
-    def fromObject(cls, dataObject):
-        samplingNumbers = [
-            SampleData.fromObject(W) for W in dataObject[SAMPLING_NUMBERS]
-        ]
-        return SamplingStrategy(dataObject[EXCLUSIVE_KEY], samplingNumbers)
-
 
 defaultSamplingStrategy = lambda: SamplingStrategy(False, [SampleData(1, 1)])
 
@@ -36,10 +29,6 @@ class SampleData:
         self.value = value
         self.frequency = frequency
 
-    @classmethod
-    def fromObject(cls, dataObject):
-        return SampleData(dataObject[VAL_KEY], dataObject[FREQ_KEY])
-
 
 class SamplingList:
     def __init__(self, value, frequency, label):
@@ -50,10 +39,17 @@ class SamplingList:
     def sample(self):
         return [sampleFromFrequencyList(self.value).value]
 
-    @classmethod
-    def fromObject(cls, dataObject):
-        wordArray = [SampleData.fromObject(W) for W in dataObject[VAL_KEY]]
-        return SamplingList(wordArray, dataObject[FREQ_KEY], dataObject[LABEL_KEY])
+
+def parseFromObject(dataObject):
+    if VAL_KEY not in dataObject:
+        samplingNumbers = [parseFromObject(W) for W in dataObject[SAMPLING_NUMBERS]]
+        return SamplingStrategy(dataObject[EXCLUSIVE_KEY], samplingNumbers)
+
+    if isinstance(dataObject[VAL_KEY], list):
+        valueArray = [parseFromObject(W) for W in dataObject[VAL_KEY]]
+        return SamplingList(valueArray, dataObject[FREQ_KEY], dataObject[LABEL_KEY])
+    else:
+        return SampleData(dataObject[VAL_KEY], dataObject[FREQ_KEY])
 
 
 def sampleUsingSamplingStrategy(wordDictionary, groupKey):
