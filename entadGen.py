@@ -17,7 +17,7 @@ def sampleEntad(wordDictionary):
     print(
         f"has {sampleRandomType(NATURE_KEY)} nature with magic of {sampleRandomType(MAGIC_KEY)}"
     )
-    print(f"limited due to {sampleRandomType(LIMITATION_KEY)} with vibe of ")
+    print(f"limited due to {sampleRandomType(LIMITATION_KEY)}")
 
 
 formatWordDictionary()
