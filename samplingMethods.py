@@ -36,9 +36,6 @@ class SamplingList:
         self.frequency = frequency
         self.label = label
 
-    def sample(self):
-        return [sampleFromFrequencyList(self.value).value]
-
 
 def parseFromObject(dataObject):
     if VAL_KEY not in dataObject:
@@ -56,25 +53,27 @@ def parseFromObject(dataObject):
         return SampleData(dataObject[VAL_KEY], dataObject[FREQ_KEY])
 
 
-def sampleUsingSamplingStrategy(wordDictionary, groupKey):
-    samplingStrategy = wordDictionary[SAMPLING_STRATEGY_KEY][groupKey]
+def sampleUsingSamplingStrategy(samplingObject, samplingStrategyDict):
+    if not isinstance(samplingObject.value, list):
+        return [samplingObject.value]
+
+    samplingStrategy = samplingStrategyDict[samplingObject.label]
 
     if samplingStrategy.exclusive:
-        groupFrequencyList = [W for W in wordDictionary[groupKey].value]
+        groupFrequencyList = [W for W in samplingObject.value]
         labelList = [G.label for G in groupFrequencyList]
         resultWordArray = []
         samplingNumber = samplingStrategy.getSamplingNumber()
         while samplingNumber > 0 and len(labelList) > 0:
             sampledGroup = sampleFromFrequencyList(groupFrequencyList)
-            resultWordArray += sampledGroup.sample()
+            resultWordArray += sampleUsingSamplingStrategy(
+                sampledGroup, samplingStrategyDict
+            )
             sampledGroupIndex = labelList.index(sampledGroup.label)
             labelList.pop(sampledGroupIndex)
             groupFrequencyList.pop(sampledGroupIndex)
             samplingNumber -= 1
         return resultWordArray
     else:
-        sampledGroup = sampleFromFrequencyList(wordDictionary[groupKey].value)
-        if isinstance(sampledGroup, SampleData):
-            return [sampledGroup.value]
-        else:
-            return sampledGroup.sample()
+        sampledGroup = sampleFromFrequencyList(samplingObject.value)
+        return sampleUsingSamplingStrategy(sampledGroup, samplingStrategyDict)

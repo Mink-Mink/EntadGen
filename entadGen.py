@@ -7,15 +7,21 @@ from samplingMethods import *
 
 
 def sampleNRandomAdjectives(wordDictionary):
-    return sampleUsingSamplingStrategy(wordDictionary, ADJ_KEY)
+    return sampleUsingSamplingStrategy(
+        wordDictionary[ADJ_KEY], wordDictionary[SAMPLING_STRATEGY_KEY]
+    )
 
 
 def sampleRandomObject(wordDictionary):
-    return sampleUsingSamplingStrategy(wordDictionary, OBJECT_KEY)
+    return sampleUsingSamplingStrategy(
+        wordDictionary[OBJECT_KEY], wordDictionary[SAMPLING_STRATEGY_KEY]
+    )
 
 
 def sampleRandomNature(wordDictionary):
-    return sampleUsingSamplingStrategy(wordDictionary, NATURE_KEY)
+    return sampleUsingSamplingStrategy(
+        wordDictionary[NATURE_KEY], wordDictionary[SAMPLING_STRATEGY_KEY]
+    )
 
 
 def sampleEntad(wordDictionary):
