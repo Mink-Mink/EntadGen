@@ -57,3 +57,9 @@ Following entad nature, there is a list of descriptors for the magic of the enta
 Final line has the limitations of the entad. This can include things like what can be affected by it and at what distance.
 
 To turn this into a full entad, we apply a little bit of creativity to these descriptors; in this case, we can imagine a tiny wooden kitchen knife, which, when pointed in a direction, can quickly move you there with bursts of air; however, the maximum distance it can move you is only the size of a room, so at most a hundred feet.
+
+## Word dictionaries
+
+All random idea generation in this script is based on dictionaries of various words, with frequencies of usage associated with them.
+
+[TODO: describe this in more detail later]
