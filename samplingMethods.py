@@ -12,11 +12,13 @@ class SamplingStrategy:
 
     @classmethod
     def fromObject(cls, dataObject):
-        samplingNumbers = [WordData.fromObject(W) for W in dataObject[SAMPLING_NUMBERS]]
+        samplingNumbers = [
+            SampleData.fromObject(W) for W in dataObject[SAMPLING_NUMBERS]
+        ]
         return SamplingStrategy(dataObject[EXCLUSIVE_KEY], samplingNumbers)
 
 
-defaultSamplingStrategy = lambda: SamplingStrategy(False, [WordData(1, 1)])
+defaultSamplingStrategy = lambda: SamplingStrategy(False, [SampleData(1, 1)])
 
 
 def sampleFromFrequencyList(frequencyList):
@@ -29,17 +31,17 @@ def sampleFromFrequencyList(frequencyList):
             randomPick -= W.frequency
 
 
-class WordData:
+class SampleData:
     def __init__(self, value, frequency):
         self.value = value
         self.frequency = frequency
 
     @classmethod
     def fromObject(cls, dataObject):
-        return WordData(dataObject[VAL_KEY], dataObject[FREQ_KEY])
+        return SampleData(dataObject[VAL_KEY], dataObject[FREQ_KEY])
 
 
-class WordList:
+class SamplingList:
     def __init__(self, value, frequency, label):
         self.value = value
         self.frequency = frequency
@@ -50,8 +52,8 @@ class WordList:
 
     @classmethod
     def fromObject(cls, dataObject):
-        wordArray = [WordData.fromObject(W) for W in dataObject[VAL_KEY]]
-        return WordList(wordArray, dataObject[FREQ_KEY], dataObject[LABEL_KEY])
+        wordArray = [SampleData.fromObject(W) for W in dataObject[VAL_KEY]]
+        return SamplingList(wordArray, dataObject[FREQ_KEY], dataObject[LABEL_KEY])
 
 
 def sampleUsingSamplingStrategy(wordDictionary, groupKey):
@@ -72,7 +74,7 @@ def sampleUsingSamplingStrategy(wordDictionary, groupKey):
         return resultWordArray
     else:
         sampledGroup = sampleFromFrequencyList(wordDictionary[groupKey])
-        if isinstance(sampledGroup, WordData):
+        if isinstance(sampledGroup, SampleData):
             return [sampledGroup.value]
         else:
             return sampledGroup.sample()

@@ -24,12 +24,12 @@ def loadWordDictionaryFile():
 
 def preProcessWordDictionary(wordDictionary):
     wordDictionary[NATURE_KEY] = [
-        WordData.fromObject(W) for W in wordDictionary[NATURE_KEY]
+        SampleData.fromObject(W) for W in wordDictionary[NATURE_KEY]
     ]
 
     for groupKey in [ADJ_KEY, OBJECT_KEY]:
         wordDictionary[groupKey] = [
-            WordList.fromObject(W) for W in wordDictionary[groupKey]
+            SamplingList.fromObject(W) for W in wordDictionary[groupKey]
         ]
     samplingStrategyDict = defaultdict(defaultSamplingStrategy)
     for samplingKey, samplingStrategy in wordDictionary[SAMPLING_STRATEGY_KEY].items():
