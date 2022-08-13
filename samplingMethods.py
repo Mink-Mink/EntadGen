@@ -2,18 +2,6 @@ from constants import *
 import secrets
 
 
-class SamplingStrategy:
-    def __init__(self, exclusive, samplingNumbers):
-        self.exclusive = exclusive
-        self.samplingNumbers = samplingNumbers
-
-    def getSamplingNumber(self):
-        return sampleFromFrequencyList(self.samplingNumbers).value
-
-
-defaultSamplingStrategy = lambda: SamplingStrategy(False, [SampleData(1, 1)])
-
-
 def sampleFromFrequencyList(frequencyList):
     totalFrequency = sum([W.frequency for W in frequencyList])
     randomPick = secrets.randbelow(totalFrequency)
@@ -24,17 +12,45 @@ def sampleFromFrequencyList(frequencyList):
             randomPick -= W.frequency
 
 
-class SampleData:
-    def __init__(self, value, frequency):
-        self.value = value
-        self.frequency = frequency
+class SamplingStrategy:
+    def __init__(self, exclusive, samplingNumbers):
+        self.exclusive = exclusive
+        self.samplingNumbers = samplingNumbers
+
+    def getSamplingNumber(self):
+        return sampleFromFrequencyList(self.samplingNumbers).value
 
 
-class SamplingList:
-    def __init__(self, value, frequency, label):
+defaultSamplingStrategy = lambda: SamplingStrategy(False, [SamplingData(1, 1)])
+
+
+class SamplingData:
+    def __init__(self, value, frequency, label=None, prefix=None, postfix=None):
         self.value = value
         self.frequency = frequency
         self.label = label
+        self.prefix = prefix
+        self.postfix = postfix
+
+    def isLeaf(self):
+        return not isinstance(self.value, list)
+
+    @classmethod
+    def fromObject(cls, dataObject):
+        if cls.isDataObjectALeaf(dataObject):
+            return SamplingData(dataObject[VAL_KEY], dataObject[FREQ_KEY])
+        else:
+            return SamplingData(
+                [parseFromObject(W) for W in dataObject[VAL_KEY]],
+                dataObject[FREQ_KEY] if FREQ_KEY in dataObject else None,
+                dataObject[LABEL_KEY],
+                dataObject[PREFIX_KEY] if PREFIX_KEY in dataObject else "",
+                dataObject[POSTFIX_KEY] if POSTFIX_KEY in dataObject else "",
+            )
+
+    @classmethod
+    def isDataObjectALeaf(cls, dataObject):
+        return not isinstance(dataObject[VAL_KEY], list)
 
 
 def parseFromObject(dataObject):
@@ -42,22 +58,19 @@ def parseFromObject(dataObject):
         samplingNumbers = [parseFromObject(W) for W in dataObject[SAMPLING_NUMBERS]]
         return SamplingStrategy(dataObject[EXCLUSIVE_KEY], samplingNumbers)
 
-    if isinstance(dataObject[VAL_KEY], list):
-        valueArray = [parseFromObject(W) for W in dataObject[VAL_KEY]]
-        return SamplingList(
-            valueArray,
-            dataObject[FREQ_KEY] if FREQ_KEY in dataObject else None,
-            dataObject[LABEL_KEY],
-        )
-    else:
-        return SampleData(dataObject[VAL_KEY], dataObject[FREQ_KEY])
+    return SamplingData.fromObject(dataObject)
 
 
-def sampleUsingSamplingStrategy(samplingObject, samplingStrategyDict):
-    if not isinstance(samplingObject.value, list):
-        return [samplingObject.value]
+def sampleUsingSamplingStrategy(
+    samplingObject, samplingStrategyDict, prefix="", postfix=""
+):
+    if samplingObject.isLeaf():
+        return [f"{prefix}{samplingObject.value}{postfix}"]
 
     samplingStrategy = samplingStrategyDict[samplingObject.label]
+
+    prefix = f"{prefix}{samplingObject.prefix}"
+    postfix = f"{samplingObject.postfix}{postfix}"
 
     if samplingStrategy.exclusive:
         groupFrequencyList = [W for W in samplingObject.value]
@@ -67,7 +80,7 @@ def sampleUsingSamplingStrategy(samplingObject, samplingStrategyDict):
         while samplingNumber > 0 and len(labelList) > 0:
             sampledGroup = sampleFromFrequencyList(groupFrequencyList)
             resultWordArray += sampleUsingSamplingStrategy(
-                sampledGroup, samplingStrategyDict
+                sampledGroup, samplingStrategyDict, prefix, postfix
             )
             sampledGroupIndex = labelList.index(sampledGroup.label)
             labelList.pop(sampledGroupIndex)
@@ -76,4 +89,6 @@ def sampleUsingSamplingStrategy(samplingObject, samplingStrategyDict):
         return resultWordArray
     else:
         sampledGroup = sampleFromFrequencyList(samplingObject.value)
-        return sampleUsingSamplingStrategy(sampledGroup, samplingStrategyDict)
+        return sampleUsingSamplingStrategy(
+            sampledGroup, samplingStrategyDict, prefix, postfix
+        )

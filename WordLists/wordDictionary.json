@@ -148,7 +148,7 @@
             "label": "magic",
             "value": [
                 {
-                    "frequency": 10,
+                    "frequency": 130,
                     "label": "kinesis",
                     "postfix": "kinesis",
                     "value": [
@@ -207,7 +207,7 @@
                     ]
                 },
                 {
-                    "frequency": 10,
+                    "frequency": 50,
                     "label": "ability effects",
                     "prefix": "Increased/decreased ",
                     "value": [
@@ -234,7 +234,7 @@
                     ]
                 },
                 {
-                    "frequency": 10,
+                    "frequency": 20,
                     "label": "energy",
                     "value": [
                         {
@@ -248,7 +248,7 @@
                     ]
                 },
                 {
-                    "frequency": 10,
+                    "frequency": 40,
                     "label": "illusions",
                     "value": [
                         {
@@ -270,7 +270,7 @@
                     ]
                 },
                 {
-                    "frequency": 10,
+                    "frequency": 30,
                     "label": "extrasensory",
                     "value": [
                         {
@@ -288,7 +288,7 @@
                     ]
                 },
                 {
-                    "frequency": 10,
+                    "frequency": 70,
                     "label": "mentalism",
                     "value": [
                         {
@@ -322,7 +322,7 @@
                     ]
                 },
                 {
-                    "frequency": 10,
+                    "frequency": 70,
                     "label": "biological modification",
                     "value": [
                         {
@@ -356,7 +356,7 @@
                     ]
                 },
                 {
-                    "frequency": 10,
+                    "frequency": 40,
                     "label": "space",
                     "value": [
                         {
@@ -378,7 +378,7 @@
                     ]
                 },
                 {
-                    "frequency": 10,
+                    "frequency": 50,
                     "label": "matter",
                     "value": [
                         {

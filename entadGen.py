@@ -24,13 +24,20 @@ def sampleRandomNature(wordDictionary):
     )
 
 
+def sampleRandomMagic(wordDictionary):
+    return sampleUsingSamplingStrategy(
+        wordDictionary[MAGIC_KEY], wordDictionary[SAMPLING_STRATEGY_KEY]
+    )
+
+
 def sampleEntad(wordDictionary):
-    shape = sampleRandomObject(wordDictionary)
-    primaryAdjectives = sampleNRandomAdjectives(wordDictionary)
-    primaryNature = sampleRandomNature(wordDictionary)
     print(f"ENTAD")
-    print(f"shaped as {shape} that is {primaryAdjectives}")
-    print(f"has {primaryNature} nature")
+    print(
+        f"shaped as {sampleRandomObject(wordDictionary)} that is {sampleNRandomAdjectives(wordDictionary)}"
+    )
+    print(
+        f"has {sampleRandomNature(wordDictionary)} nature with magic of {sampleRandomMagic(wordDictionary)}"
+    )
 
 
 formatWordDictionary()
