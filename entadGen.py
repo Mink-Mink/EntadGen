@@ -1,6 +1,3 @@
-# Idea here is to have a simple script someone can use to generate entad ideas
-# Entad ideas are by necessity incomplete and require human input
-#
 from constants import *
 from fileLoading import *
 from samplingMethods import *
