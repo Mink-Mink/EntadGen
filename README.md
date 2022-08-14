@@ -5,11 +5,17 @@
 This script is meant to be an "idea engine" for generating entads - unique magic items.
 Entad ideas this script generates are simply a list of shape, key areas of magic, and limitations; turning this into a complete magic items is left as an exercise to the user.
 
+## Discord integration
+
+This code has been integrated into a discord bot. To add it to your server, simply use this link: https://discord.com/api/oauth2/authorize?client_id=1008363355653799956&permissions=277025426432&scope=bot%20applications.commands
+
+Currently the bot runs on my laptop, and would probably only be active about a quarter of the time; I am looking into cheap hosting possibilities which would reduce downtime to zero.
+
+To generate an entad, use /entad slash command
+
 ## Installation
 
-Currently, using this script requires minimum knowledge of programming; in the future, I may put it up on some hosting, and make it more accessible to the general audience.
-
-To install it, you want to clone the git repository, then use the following console commands in a console window from the repository root folder:
+To run the script locally, you will require a minimum knowledge of programming. To install it, you want to clone the git repository, then use the following console commands in a console window from the repository root folder:
 
 On windows:
 
@@ -66,8 +72,10 @@ All random idea generation in this script is based on dictionaries of various wo
 
 * Describe word dictionaries in actual detail
 * Add more limitations and adjectives
-* Add discord bot integration?
 * figure out hosting?
 * Add a function to list out the probabilities of all the options
 * Go through the dictionaries and tinker with odds
-* Add license
+
+## Art license
+
+Thumbnail art for the bot was generated using [Stable Diffusion](https://stability.ai/blog/stable-diffusion-announcement), and is in the public domain.

@@ -1,3 +1,6 @@
+DISCORD_KEY_FILE = "../keyFile.json"
+DISCORD_API_KEY = "discordAPI"
+
 WORD_LIST_FOLDER = "./WordLists/"
 MAIN_WORD_DICTIONARY_FILENAME = "wordDictionary.json"
 
