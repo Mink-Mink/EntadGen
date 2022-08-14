@@ -71,3 +71,4 @@ All random idea generation in this script is based on dictionaries of various wo
 * figure out hosting?
 * Add a function to list out the probabilities of all the options
 * Go through the dictionaries and tinker with odds
+* Add license

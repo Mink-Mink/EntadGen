@@ -12,7 +12,7 @@ MAGIC_KEY = "magic"
 LIMITATION_KEY = "limitations"
 
 VAL_KEY = "value"
-FREQ_KEY = "frequency"
+ODDS_KEY = "oddsRatio"
 LABEL_KEY = "label"
 PREFIX_KEY = "prefix"
 POSTFIX_KEY = "postfix"
@@ -21,7 +21,7 @@ FILENAME_KEY = "filename"
 TYPE_KEY = "type"
 SAMPLE_OTHER_WORD_GROUP_TYPE = "sampleOtherWordGroup"
 
-FREQUENCY_SUM_UP_CHILDREN = "sumUpChildren"
+ODDS_RATIO_SUM_UP_CHILDREN = "sumUpChildren"
 INHERITED_PROPERTIES_KEY = "inheritedProperties"
 
 EXCLUSIVE_KEY = "exclusive"

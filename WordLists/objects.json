@@ -4,632 +4,632 @@
         "label": "objects",
         "value": [
             {
-                "frequency": "sumUpChildren",
                 "label": "housing",
+                "oddsRatio": "sumUpChildren",
                 "value": [
                     {
-                        "frequency": 2,
+                        "oddsRatio": 2,
                         "value": "house"
                     },
                     {
-                        "frequency": 2,
+                        "oddsRatio": 2,
                         "value": "boat"
                     },
                     {
-                        "frequency": 2,
+                        "oddsRatio": 2,
                         "value": "airship"
                     }
                 ]
             },
             {
-                "frequency": "sumUpChildren",
                 "label": "music",
+                "oddsRatio": "sumUpChildren",
                 "value": [
                     {
-                        "frequency": 15,
+                        "oddsRatio": 15,
                         "value": "flute"
                     },
                     {
-                        "frequency": 20,
+                        "oddsRatio": 20,
                         "value": "lute"
                     },
                     {
-                        "frequency": 20,
+                        "oddsRatio": 20,
                         "value": "trombone"
                     },
                     {
-                        "frequency": 20,
+                        "oddsRatio": 20,
                         "value": "drum"
                     },
                     {
-                        "frequency": 20,
+                        "oddsRatio": 20,
                         "value": "piano"
                     },
                     {
-                        "frequency": 20,
+                        "oddsRatio": 20,
                         "value": "harp"
                     }
                 ]
             },
             {
-                "frequency": "sumUpChildren",
                 "label": "weapons",
+                "oddsRatio": "sumUpChildren",
                 "value": [
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "sword"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "hammer"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "spear"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "bat"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "quarterstaff"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "crossbow"
                     },
                     {
-                        "frequency": 5,
+                        "oddsRatio": 5,
                         "value": "trident"
                     },
                     {
-                        "frequency": 15,
+                        "oddsRatio": 15,
                         "value": "bow"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "knife"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "whip"
                     }
                 ]
             },
             {
-                "frequency": "sumUpChildren",
                 "label": "funiture",
+                "oddsRatio": "sumUpChildren",
                 "value": [
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "desk"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "bed"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "lamp"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "closet"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "stove"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "door"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "window"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "rug"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "sofa"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "chair"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "grandfather clock"
                     }
                 ]
             },
             {
-                "frequency": "sumUpChildren",
                 "label": "cutlery",
+                "oddsRatio": "sumUpChildren",
                 "value": [
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "fork"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "kitchen knife"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "spoon"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "pot"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "pan"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "spatula"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "cup"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "plate"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "tea pot"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "bowl"
                     }
                 ]
             },
             {
-                "frequency": "sumUpChildren",
                 "label": "armour",
+                "oddsRatio": "sumUpChildren",
                 "value": [
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "helmet"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "leg armour"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "arm armour"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "body armour"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "suit of armour (no helmet)"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "suit of armour (with helmet)"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "shield"
                     }
                 ]
             },
             {
-                "frequency": "sumUpChildren",
                 "label": "clothing",
+                "oddsRatio": "sumUpChildren",
                 "value": [
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "cape"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "shirt"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "pants"
                     },
                     {
-                        "frequency": 10,
                         "label": "shoes",
+                        "oddsRatio": 10,
                         "value": [
                             {
-                                "frequency": 10,
+                                "oddsRatio": 10,
                                 "value": "sandals"
                             },
                             {
-                                "frequency": 10,
+                                "oddsRatio": 10,
                                 "value": "boots"
                             },
                             {
-                                "frequency": 10,
+                                "oddsRatio": 10,
                                 "value": "shoes"
                             },
                             {
-                                "frequency": 10,
+                                "oddsRatio": 10,
                                 "value": "high heels"
                             }
                         ]
                     },
                     {
-                        "frequency": 10,
                         "label": "hats",
+                        "oddsRatio": 10,
                         "value": [
                             {
-                                "frequency": 10,
+                                "oddsRatio": 10,
                                 "value": "hat"
                             },
                             {
-                                "frequency": 10,
+                                "oddsRatio": 10,
                                 "value": "bandana"
                             },
                             {
-                                "frequency": 10,
+                                "oddsRatio": 10,
                                 "value": "cowboy hat"
                             }
                         ]
                     },
                     {
-                        "frequency": "sumUpChildren",
                         "label": "jewelry",
+                        "oddsRatio": "sumUpChildren",
                         "value": [
                             {
-                                "frequency": 10,
+                                "oddsRatio": 10,
                                 "value": "bracelet"
                             },
                             {
-                                "frequency": 10,
+                                "oddsRatio": 10,
                                 "value": "amulet"
                             },
                             {
-                                "frequency": 10,
+                                "oddsRatio": 10,
                                 "value": "earrings"
                             },
                             {
-                                "frequency": 10,
+                                "oddsRatio": 10,
                                 "value": "ring"
                             },
                             {
-                                "frequency": 10,
+                                "oddsRatio": 10,
                                 "value": "pin (clothing)"
                             }
                         ]
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "scarf"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "tie"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "belt"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "buckle"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "glasses"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "socks"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "stockings"
                     }
                 ]
             },
             {
-                "frequency": "sumUpChildren",
                 "label": "containers",
+                "oddsRatio": "sumUpChildren",
                 "value": [
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "bag"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "pot"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "box"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "bottle"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "can"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "vase"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "wallet"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "basket"
                     }
                 ]
             },
             {
-                "frequency": "sumUpChildren",
                 "label": "books & paper",
+                "oddsRatio": "sumUpChildren",
                 "value": [
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "book"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "notebook"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "paper"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "pen"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "pencil"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "inkwell"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "feather"
                     }
                 ]
             },
             {
-                "frequency": "sumUpChildren",
                 "label": "trinkets",
+                "oddsRatio": "sumUpChildren",
                 "value": [
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "lump"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "ornament"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "key"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "bell"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "statue"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "map"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "candle"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "whistle"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "coin"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "mirror"
                     }
                 ]
             },
             {
-                "frequency": "sumUpChildren",
                 "label": "tools",
+                "oddsRatio": "sumUpChildren",
                 "value": [
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "watch"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "hammer"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "saw"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "crowbar"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "chisel"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "shovel"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "multitool"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "wrench"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "comb"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "brush"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "pick"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "hand drill"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "umbrella"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "screwdriver"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "screw"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "nail"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "rope/chain"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "mop/broom"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "fishing hook"
                     }
                 ]
             },
             {
-                "frequency": "sumUpChildren",
                 "label": "sewing",
+                "oddsRatio": "sumUpChildren",
                 "value": [
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "needle"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "ball of yarn"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "spool of thread"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "thimble"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "button"
                     }
                 ]
             },
             {
-                "frequency": "sumUpChildren",
                 "label": "games",
+                "oddsRatio": "sumUpChildren",
                 "value": [
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "ball"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "toy"
                     },
                     {
-                        "frequency": 10,
                         "label": "plush toys",
+                        "oddsRatio": 10,
                         "prefix": "plush ",
                         "value": [
                             {
-                                "frequency": 10,
+                                "oddsRatio": 10,
                                 "value": "bear"
                             },
                             {
-                                "frequency": 10,
+                                "oddsRatio": 10,
                                 "value": "dog"
                             },
                             {
-                                "frequency": 10,
+                                "oddsRatio": 10,
                                 "value": "cat"
                             },
                             {
-                                "frequency": 10,
+                                "oddsRatio": 10,
                                 "value": "dragon"
                             },
                             {
-                                "frequency": 10,
+                                "oddsRatio": 10,
                                 "value": "frog"
                             },
                             {
-                                "frequency": 10,
+                                "oddsRatio": 10,
                                 "value": "octopus"
                             },
                             {
-                                "frequency": 10,
+                                "oddsRatio": 10,
                                 "value": "horse"
                             },
                             {
-                                "frequency": 10,
+                                "oddsRatio": 10,
                                 "value": "rabbit"
                             },
                             {
-                                "frequency": 10,
+                                "oddsRatio": 10,
                                 "value": "duck"
                             }
                         ]
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "playing cards"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "dice"
                     },
                     {
-                        "frequency": 10,
+                        "oddsRatio": 10,
                         "value": "domino"
                     }
                 ]

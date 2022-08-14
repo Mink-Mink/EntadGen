@@ -15,19 +15,19 @@
             "prefix": " (",
             "value": [
                 {
-                    "frequency": 40,
+                    "oddsRatio": 40,
                     "value": "minor"
                 },
                 {
-                    "frequency": 40,
+                    "oddsRatio": 40,
                     "value": "normal"
                 },
                 {
-                    "frequency": 10,
+                    "oddsRatio": 10,
                     "value": "major"
                 },
                 {
-                    "frequency": 1,
+                    "oddsRatio": 1,
                     "value": "world-class"
                 }
             ]
@@ -36,23 +36,23 @@
             "label": "nature",
             "value": [
                 {
-                    "frequency": 20,
+                    "oddsRatio": 20,
                     "value": "offensive"
                 },
                 {
-                    "frequency": 10,
+                    "oddsRatio": 10,
                     "value": "defensive"
                 },
                 {
-                    "frequency": 5,
+                    "oddsRatio": 5,
                     "value": "storage"
                 },
                 {
-                    "frequency": 5,
+                    "oddsRatio": 5,
                     "value": "travel"
                 },
                 {
-                    "frequency": 2,
+                    "oddsRatio": 2,
                     "value": "metamagic"
                 }
             ]
