@@ -65,7 +65,6 @@ All random idea generation in this script is based on dictionaries of various wo
 ## TODO
 
 * Describe word dictionaries in actual detail
-* Rename frequencies to odds
 * Add more limitations and adjectives
 * Add discord bot integration?
 * figure out hosting?
