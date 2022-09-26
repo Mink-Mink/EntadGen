@@ -32,16 +32,26 @@ class SamplingData:
         self.prefix = prefix
         self.postfix = postfix
 
+    def getText(self):
+        if self.label:
+            return self.label
+        else:
+            return self.value
+
     def isLeaf(self):
         return not isinstance(self.value, list)
 
     def getPrefix(self, wordDictionary):
+        if self.prefix is None:
+            return ""
         if isinstance(self.prefix, str):
             return self.prefix
         else:
             return "".join(sampleBasedOnPointer(self.prefix, wordDictionary))
 
     def getPostfix(self, wordDictionary):
+        if self.postfix is None:
+            return ""
         if isinstance(self.postfix, str):
             return self.postfix
         else:
