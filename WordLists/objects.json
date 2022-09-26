@@ -5,28 +5,28 @@
         "value": [
             {
                 "label": "housing",
-                "oddsRatio": "sumUpChildren",
+                "oddsRatio": 4,
                 "value": [
                     {
-                        "oddsRatio": 2,
+                        "oddsRatio": 15,
                         "value": "house"
                     },
                     {
-                        "oddsRatio": 2,
+                        "oddsRatio": 10,
                         "value": "boat"
                     },
                     {
-                        "oddsRatio": 2,
+                        "oddsRatio": 5,
                         "value": "airship"
                     }
                 ]
             },
             {
-                "label": "music",
-                "oddsRatio": "sumUpChildren",
+                "label": "music instruments",
+                "oddsRatio": 150,
                 "value": [
                     {
-                        "oddsRatio": 15,
+                        "oddsRatio": 20,
                         "value": "flute"
                     },
                     {
@@ -34,29 +34,29 @@
                         "value": "lute"
                     },
                     {
-                        "oddsRatio": 20,
+                        "oddsRatio": 10,
                         "value": "trombone"
                     },
                     {
-                        "oddsRatio": 20,
+                        "oddsRatio": 10,
                         "value": "drum"
                     },
                     {
-                        "oddsRatio": 20,
+                        "oddsRatio": 5,
                         "value": "piano"
                     },
                     {
-                        "oddsRatio": 20,
+                        "oddsRatio": 10,
                         "value": "harp"
                     }
                 ]
             },
             {
                 "label": "weapons",
-                "oddsRatio": "sumUpChildren",
+                "oddsRatio": 500,
                 "value": [
                     {
-                        "oddsRatio": 10,
+                        "oddsRatio": 20,
                         "value": "sword"
                     },
                     {
@@ -69,11 +69,11 @@
                     },
                     {
                         "oddsRatio": 10,
-                        "value": "bat"
+                        "value": "quarterstaff"
                     },
                     {
                         "oddsRatio": 10,
-                        "value": "quarterstaff"
+                        "value": "wand"
                     },
                     {
                         "oddsRatio": 10,
@@ -84,7 +84,7 @@
                         "value": "trident"
                     },
                     {
-                        "oddsRatio": 15,
+                        "oddsRatio": 40,
                         "value": "bow"
                     },
                     {
@@ -92,14 +92,14 @@
                         "value": "knife"
                     },
                     {
-                        "oddsRatio": 10,
+                        "oddsRatio": 4,
                         "value": "whip"
                     }
                 ]
             },
             {
-                "label": "funiture",
-                "oddsRatio": "sumUpChildren",
+                "label": "furniture",
+                "oddsRatio": 110,
                 "value": [
                     {
                         "oddsRatio": 10,
@@ -108,6 +108,14 @@
                     {
                         "oddsRatio": 10,
                         "value": "bed"
+                    },
+                    {
+                        "oddsRatio": 10,
+                        "value": "pillow"
+                    },
+                    {
+                        "oddsRatio": 10,
+                        "value": "blanket"
                     },
                     {
                         "oddsRatio": 10,
@@ -149,7 +157,7 @@
             },
             {
                 "label": "cutlery",
-                "oddsRatio": "sumUpChildren",
+                "oddsRatio": 100,
                 "value": [
                     {
                         "oddsRatio": 10,
@@ -195,22 +203,22 @@
             },
             {
                 "label": "armour",
-                "oddsRatio": "sumUpChildren",
+                "oddsRatio": 240,
                 "value": [
                     {
-                        "oddsRatio": 10,
+                        "oddsRatio": 20,
                         "value": "helmet"
                     },
                     {
-                        "oddsRatio": 10,
+                        "oddsRatio": 20,
                         "value": "leg armour"
                     },
                     {
-                        "oddsRatio": 10,
+                        "oddsRatio": 20,
                         "value": "arm armour"
                     },
                     {
-                        "oddsRatio": 10,
+                        "oddsRatio": 20,
                         "value": "body armour"
                     },
                     {
@@ -218,7 +226,7 @@
                         "value": "suit of armour (no helmet)"
                     },
                     {
-                        "oddsRatio": 10,
+                        "oddsRatio": 5,
                         "value": "suit of armour (with helmet)"
                     },
                     {
@@ -229,7 +237,7 @@
             },
             {
                 "label": "clothing",
-                "oddsRatio": "sumUpChildren",
+                "oddsRatio": 450,
                 "value": [
                     {
                         "oddsRatio": 10,
@@ -245,7 +253,7 @@
                     },
                     {
                         "label": "shoes",
-                        "oddsRatio": 10,
+                        "oddsRatio": "sumUpChildren",
                         "value": [
                             {
                                 "oddsRatio": 10,
@@ -285,7 +293,7 @@
                     },
                     {
                         "label": "jewelry",
-                        "oddsRatio": "sumUpChildren",
+                        "oddsRatio": 100,
                         "value": [
                             {
                                 "oddsRatio": 10,
@@ -341,7 +349,7 @@
             },
             {
                 "label": "containers",
-                "oddsRatio": "sumUpChildren",
+                "oddsRatio": 80,
                 "value": [
                     {
                         "oddsRatio": 10,
@@ -379,7 +387,7 @@
             },
             {
                 "label": "books & paper",
-                "oddsRatio": "sumUpChildren",
+                "oddsRatio": 80,
                 "value": [
                     {
                         "oddsRatio": 10,
@@ -392,6 +400,10 @@
                     {
                         "oddsRatio": 10,
                         "value": "paper"
+                    },
+                    {
+                        "oddsRatio": 10,
+                        "value": "map"
                     },
                     {
                         "oddsRatio": 10,
@@ -413,7 +425,7 @@
             },
             {
                 "label": "trinkets",
-                "oddsRatio": "sumUpChildren",
+                "oddsRatio": 90,
                 "value": [
                     {
                         "oddsRatio": 10,
@@ -437,10 +449,6 @@
                     },
                     {
                         "oddsRatio": 10,
-                        "value": "map"
-                    },
-                    {
-                        "oddsRatio": 10,
                         "value": "candle"
                     },
                     {
@@ -459,7 +467,7 @@
             },
             {
                 "label": "tools",
-                "oddsRatio": "sumUpChildren",
+                "oddsRatio": 190,
                 "value": [
                     {
                         "oddsRatio": 10,
@@ -541,7 +549,7 @@
             },
             {
                 "label": "sewing",
-                "oddsRatio": "sumUpChildren",
+                "oddsRatio": 50,
                 "value": [
                     {
                         "oddsRatio": 10,
@@ -567,7 +575,7 @@
             },
             {
                 "label": "games",
-                "oddsRatio": "sumUpChildren",
+                "oddsRatio": 80,
                 "value": [
                     {
                         "oddsRatio": 10,
@@ -579,7 +587,7 @@
                     },
                     {
                         "label": "plush toys",
-                        "oddsRatio": 10,
+                        "oddsRatio": 30,
                         "prefix": "plush ",
                         "value": [
                             {
